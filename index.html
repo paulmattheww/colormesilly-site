@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ColorMeSilly!</title>
-  <meta name="description" content="ColorMeSilly! turns photos into coloring-page line art. By Sovereign Action LLC.">
+  <title>ColorMeSilly! — Turn a photo into a coloring page</title>
+  <meta name="description" content="ColorMeSilly! turns a photo of someone you love into a coloring page. Cloud line art for families. By Sovereign Action LLC.">
+  <link rel="icon" href="assets/cms-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/cms-icon.png">
+  <meta property="og:title" content="ColorMeSilly!">
+  <meta property="og:description" content="Turn a photo of someone you love into a coloring page.">
+  <meta property="og:image" content="assets/cms-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;650&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
   <div class="wrap">
     <header>
       <a class="brand" href="index.html">
-        <svg class="mark" viewBox="0 0 44 44" aria-hidden="true">
-          <circle cx="22" cy="22" r="21" fill="#fff" stroke="#2a1c14" stroke-width="2"/>
-          <path d="M10 28c4-10 8-14 12-14s8 4 12 14" fill="none" stroke="#e85d4c" stroke-width="3" stroke-linecap="round"/>
-          <path d="M14 18c3-6 6-8 8-8s5 2 8 8" fill="none" stroke="#3b96c9" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="22" cy="24" r="3" fill="#f0b429" stroke="#2a1c14" stroke-width="1.5"/>
-        </svg>
+        <img class="mark" src="assets/cms-icon.png" width="48" height="48" alt="ColorMeSilly! app icon">
         <span class="brand-name">ColorMeSilly!</span>
       </a>
       <nav aria-label="Site">
@@ -30,38 +30,52 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1>Turn a photo into a coloring page.</h1>
-        <p class="lede">ColorMeSilly! is an iOS app from Sovereign Action LLC. Pick a photo, pass a grown-up math check, and get line art you can color.</p>
-        <ul class="chips">
-          <li class="coral">Photo &amp; Video</li>
-          <li class="sky">Not Kids Category</li>
-          <li class="mint">No ads</li>
-          <li class="gold">No tracking</li>
-          <li class="violet">No accounts</li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="privacy.html">Privacy Policy</a>
-          <a class="btn btn-ghost" href="support.html">Support &amp; cancel</a>
+      <section class="hero hero-home">
+        <img class="hero-icon" src="assets/cms-icon.png" width="112" height="112" alt="ColorMeSilly! icon: a girl split between full color and a crayon coloring page">
+        <h1>Turn a photo into a coloring page</h1>
+        <p class="lede">Someone you love, ready to color. Pick a photo. Get clean line art. Color together.</p>
+        <p class="coming-soon">App Store coming soon</p>
+      </section>
+
+      <section class="shots" aria-label="App Store screenshots">
+        <h2 class="shots-title">Photo in. Coloring page out.</h2>
+        <p class="shots-sub">Kids, pets, and everyday moments — ready for crayons.</p>
+        <div class="shot-grid">
+          <figure class="shot">
+            <img src="assets/shot-photo-to-page.jpg" width="1242" height="2208" alt="Photo of a smiling girl with curly hair next to her black-and-white coloring page">
+          </figure>
+          <figure class="shot">
+            <img src="assets/shot-before-after.jpg" width="1242" height="2208" alt="Before and after: a boy in a striped shirt turned into clean line art">
+          </figure>
+          <figure class="shot">
+            <img src="assets/shot-color-together.jpg" width="1242" height="2208" alt="A crayon-colored page of a girl, with the original photo inset">
+          </figure>
+          <figure class="shot">
+            <img src="assets/shot-dog.jpg" width="1242" height="2208" alt="Golden retriever puppy photo turned into a coloring page">
+          </figure>
         </div>
       </section>
 
-      <div class="card-grid">
-        <article class="card">
-          <h2>Photos stay put until a grown-up says go</h2>
-          <p>A photo leaves your device only after a grown-up math check. Then it is sent to fal.ai (FLUX.1 Kontext) over TLS to create line art. We do not store the photo.</p>
-        </article>
-        <article class="card">
-          <h2>Quiet by design</h2>
-          <p>No ads, no analytics, no accounts, and no tracking. Purchases go through Apple. Bundle ID: <code>com.colormesilly.app</code>.</p>
-        </article>
-      </div>
+      <ul class="perks">
+        <li>
+          <strong>Grown-up check</strong>
+          A quick math check before any photo leaves the device.
+        </li>
+        <li>
+          <strong>No ads</strong>
+          No banners, no tracking, no noisy extras.
+        </li>
+        <li>
+          <strong>No accounts</strong>
+          Open the app and color. Nothing to sign up for.
+        </li>
+        <li>
+          <strong>Color together on iPad</strong>
+          Crayons, fills, and messy joy on a bigger screen.
+        </li>
+      </ul>
 
-      <section class="card" style="margin-top:16px">
-        <h2>ColorMeSilly! Plus</h2>
-        <p class="price">7-day free trial, then $4.99/month</p>
-        <p>Plus auto-renews through Apple. Cancel any time in iOS Settings. Extra credits are $2.99 for 25. See <a href="support.html">Support</a> for cancel steps.</p>
-      </section>
+      <p class="plus-note">ColorMeSilly! Plus is a 7-day free trial, then $4.99/month through Apple. Cancel in iOS Settings — see <a href="support.html">Support</a>.</p>
     </main>
 
     <footer>
